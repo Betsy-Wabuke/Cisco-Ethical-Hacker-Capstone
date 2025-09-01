@@ -1,18 +1,27 @@
-
 # Cisco Ethical Hacker Capstone Project
 
-This repository documents my completion of the Cisco Ethical Hacker Capstone Project, including challenge write-ups, tools used, and a final report. All sensitive data (e.g., flags, IPs) has been redacted.
+This repository documents my Cisco Networking Academy Ethical Hacker Capstone Project. The project involves a penetration test on networks (e.g., 10.6.6.0/24) using Kali Linux and DVWA to identify and exploit vulnerabilities.
 
-## Structure
-- **writeups/**: Detailed solutions for each challenge.
-- **assets/**: Screenshots and supporting media.
-- **report/**: Comprehensive penetration testing report.
-- **tools/**: Scripts and configurations.
+## Objectives
+- Challenge 1: SQL Injection to retrieve a flag.
+- Challenge 2: Web Server Vulnerabilities to find a flag.
+- Challenge 3: Samba Share Exploits to access a flag.
+- Challenge 4: PCAP Analysis to extract flag information.
 
-## Challenges Covered
-- [SQL Injection](writeups/sql-injection.md)
-- [Web Server Vulnerabilities](writeups/web-server.md)
-- [SMB Server Shares](writeups/smb-shares.md)
-- [PCAP File Analysis](writeups/pcap-analysis.md)
+## Table of Contents
+- [Challenge 1: SQL Injection](./writeups/challenge-1-sql-injection/walkthrough.md)
+- [Challenge 2: Web Vulnerabilities](./writeups/challenge-2-web-vulnerabilities/walkthrough.md)
+- [Challenge 3: Samba Exploits](./writeups/challenge-3-samba-exploits/walkthrough.md)
+- [Challenge 4: PCAP Analysis](./writeups/challenge-4-pcap-analysis/walkthrough.md)
+- [Final Report](./report/penetration-report.md)
+- [Remediations](./report/remediations.md)
+- [Setup Notes](./assets/dvwa-setup.md)
 
-**Note**: This is for educational purposes only.
+## Tools Used
+- Kali Linux VM
+- sqlmap, dirbuster, smbclient, Wireshark
+- DVWA (Damn Vulnerable Web Application)
+
+## Setup
+- Use the customized Kali VM from the course.
+- Install DVWA via Docker or locally (see [DVWA Setup](./assets/dvwa-setup.md)).
