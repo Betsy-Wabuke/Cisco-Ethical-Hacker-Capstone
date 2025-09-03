@@ -16,8 +16,7 @@ Identify and exploit web server vulnerabilities, such as directory listing, to l
 ### Step 1: Preliminary Setup
 1. Logged into the target server (IP redacted for security) using provided credentials.
 2. Set the application security level to low to simulate a vulnerable environment.
-- Login screenshot:
-![Login Result](screenshots/login.png)
+
 ### Step 2: Reconnaissance
 - Used Nikto to scan the target server for vulnerabilities and misconfigurations (command example: `nikto -h http://[target-ip]`).
 - Ran `exploit-script.py` to enumerate directories and confirm findings (see script in `exploit-script.py`).
