@@ -7,6 +7,7 @@ Identify and exploit web server vulnerabilities, such as directory listing, to l
 
 ## Tools Used
 - **Nikto**: For web server vulnerability scanning and directory enumeration.
+- **Python Script (exploit-script.py)**: Custom script for directory enumeration.
 - Web browser (for URL manipulation).
 - Manual reconnaissance techniques.
 
@@ -18,12 +19,17 @@ Identify and exploit web server vulnerabilities, such as directory listing, to l
 
 ### Step 2: Reconnaissance
 - Used Nikto to scan the target server for vulnerabilities and misconfigurations (command example: `nikto -h http://[target-ip]`).
-- Identified directories with enabled directory listing through Nikto’s output and manual URL manipulation in a web browser.
+- Ran `exploit-script.py` to enumerate directories and confirm findings (see script in `exploit-script.py`).
+- Identified directories with enabled directory listing through Nikto’s output, script results, and manual URL manipulation in a web browser.
 - Viewable directories found:
   - `/config/`
   - `/docs/`
 - Nikto scan results screenshot:
   ![Nikto Scan Results](screenshots/nikto-scan.png)
+- Config directory listing screenshot:
+  ![Config Directory](screenshots/config-dir.png)
+- Docs directory listing screenshot:
+  ![Docs Directory](screenshots/docs-dir.png)
 
 ### Step 3: Locate the Flag File
 - Navigated to the viewable directories using URLs in the web browser.
@@ -34,8 +40,8 @@ Identify and exploit web server vulnerabilities, such as directory listing, to l
 - Subdirectory containing the flag: `/docs/user_form.html`
 - Flag message: *Great work! You found the flag file for Challenge 2!*
 - Flag code: [Redacted for security]
-- Directory listing screenshot showing the flag file:
-  ![Directory Listing](screenshots/dir-listed.png)
+- Flag file screenshot:
+  ![Flag File](screenshots/flag-file.png)
 
 ### Step 4: Remediation Research
 To prevent directory listing exploits, the following remediation methods are recommended:
@@ -48,10 +54,11 @@ To prevent directory listing exploits, the following remediation methods are rec
    - Alternatively, restrict access to sensitive directories using access control rules (e.g., Apache’s `.htaccess` with `Deny from all` or authentication requirements).
 
 ## Lessons Learned
-- Nikto is effective for identifying web server misconfigurations, such as directory listing vulnerabilities.
-- Combining automated tools like Nikto with manual URL manipulation enhances reconnaissance accuracy.
+- Nikto and custom scripts like `exploit-script.py` are effective for identifying web server misconfigurations.
+- Combining automated tools with manual URL manipulation enhances reconnaissance accuracy.
 - Proper server configuration and access controls are critical to secure web servers.
 
 ## Repository Notes
-- Screenshots (`nikto-scan.png`, `dir-listed.png`) are stored in the `screenshots/` folder, illustrating Nikto scan results and the directory listing containing `user_form.html`.
+- Screenshots (`nikto-scan.png`, `config-dir.png`, `docs-dir.png`, `flag-file.png`) are stored in the `screenshots/` folder, illustrating Nikto scan results, directory listings for `/config/` and `/docs/`, and the flag file `user_form.html`.
+- The `exploit-script.py` file contains a sample script for directory enumeration.
 - Ensure sensitive data (e.g., IPs, credentials, flags) is redacted before committing to a public repository.
