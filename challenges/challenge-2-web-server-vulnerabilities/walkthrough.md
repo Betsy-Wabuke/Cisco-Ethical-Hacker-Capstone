@@ -15,6 +15,8 @@ Identify and exploit web server vulnerabilities, such as directory listing, to l
 
 ### Step 1: Preliminary Setup
 1. Logged into the target server (IP redacted for security) using provided credentials.
+   - Screenshot of login interface:
+     ![Login Interface](screenshots/login.png)
 2. Set the application security level to low to simulate a vulnerable environment.
 
 ### Step 2: Reconnaissance
@@ -59,6 +61,6 @@ To prevent directory listing exploits, the following remediation methods are rec
 - Proper server configuration and access controls are critical to secure web servers.
 
 ## Repository Notes
-- Screenshots (`nikto-scan.png`, `config-dir.png`, `docs-dir.png`, `flag-file.png`) are stored in the `screenshots/` folder, illustrating Nikto scan results, directory listings for `/config/` and `/docs/`, and the flag file `user_form.html`.
+- Screenshots (`login.png`, `nikto-scan.png`, `config-dir.png`, `docs-dir.png`, `flag-file.png`) are stored in the `screenshots/` folder, illustrating the login interface, Nikto scan results, directory listings for `/config/` and `/docs/`, and the flag file `user_form.html`.
 - The `exploit-script.py` file contains a sample script for directory enumeration.
 - Ensure sensitive data (e.g., IPs, credentials, flags) is redacted before committing to a public repository.
