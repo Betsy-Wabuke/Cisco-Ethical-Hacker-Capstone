@@ -41,7 +41,7 @@ The assessment identified vulnerabilities across four challenges. Each is detail
 - **Description**: A web application at 10.5.5.12 was vulnerable to SQL injection due to lack of input sanitization.
 - **Exploitation**:
   - Logged into DVWA with default credentials and set security to low.
-  - Used SQL injection to retrieve user hashes   - Cracked the hash using online tools and John the Ripper to obtain the password.
+  - Used SQL injection to retrieve user hashes   - Cracked the hash using CrackStation to obtain the password.
   - Accessed a flag file at 192.168.0.10 using the compromised credentials.
 - **Severity**: High (potential for data leakage and unauthorized access).
 - **Evidence**: Flag value captured.
@@ -112,5 +112,6 @@ For each vulnerability, the following high-level remediations are proposed based
 ## Conclusion
 
 This capstone project demonstrated practical application of ethical hacking skills, successfully identifying and exploiting vulnerabilities in a simulated environment. Implementing the recommended remediations will significantly enhance security. For further details on the course, refer to the Cisco Networking Academy resources.
+
 
 
