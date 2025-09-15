@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This penetration testing report documents the findings from the Cisco Ethical Hacker Capstone Project, a simulated ethical hacking engagement conducted as part of the Cisco Networking Academy's Ethical Hacker course. The assessment targeted simulated networks (10.6.6.0/24 and 172.17.0.0/24) to identify and exploit vulnerabilities in a controlled environment using the Damn Vulnerable Web Application (DVWA) and other tools. The objective was to perform reconnaissance, scanning, exploitation, and post-exploitation activities to locate flag values across four challenges, while proposing remediation strategies.
+This penetration testing report documents the findings from the Cisco Ethical Hacker Capstone Project, a simulated ethical hacking engagement conducted as part of the Cisco Networking Academy's Ethical Hacker course. The assessment targeted simulated networks to identify and exploit vulnerabilities in a controlled environment using the Damn Vulnerable Web Application (DVWA) and other tools. The objective was to perform reconnaissance, scanning, exploitation, and post-exploitation activities to locate flag values across four challenges, while proposing remediation strategies.
 
 Key findings include successful exploits of SQL injection, web server misconfigurations, open SMB shares, and packet capture analysis vulnerabilities. No actual harm was caused, as this was a lab-based simulation. Recommendations focus on implementing secure coding practices, access controls, and encryption to mitigate risks.
 
@@ -112,6 +112,7 @@ For each vulnerability, the following high-level remediations are proposed based
 ## Conclusion
 
 This capstone project demonstrated practical application of ethical hacking skills, successfully identifying and exploiting vulnerabilities in a simulated environment. Implementing the recommended remediations will significantly enhance security. For further details on the course, refer to the Cisco Networking Academy resources.
+
 
 
 
