@@ -19,9 +19,8 @@ This repository documents my Cisco Networking Academy Ethical Hacker Capstone Pr
 
 ## Tools Used
 - Kali Linux VM
-- sqlmap, dirbuster, smbclient, Wireshark
+- nmap, enum4linux, smbclient, Wireshark
 - DVWA (Damn Vulnerable Web Application)
 
 ## Setup
 - Use the customized Kali VM from the course.
-- Install DVWA via Docker or locally (see [DVWA Setup](./assets/dvwa-setup.md)).
